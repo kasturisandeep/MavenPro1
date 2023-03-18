@@ -6,6 +6,6 @@ node{
   
   stage('Maven')
   {
-    sh "usr/bin/mvn clean install"
+    sh "mvn clean install"
   }
 }
