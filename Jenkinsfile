@@ -5,7 +5,11 @@ node{
   }
   
   stage('Maven')
+  steps{
   {
-    bat "mvn clean install"
+    script{
+    sh "mvn clean install"
+    }
+  }
   }
 }
